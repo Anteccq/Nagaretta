@@ -1,0 +1,18 @@
+﻿<Window x:Class="TweRiver.Views.AlcedoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TweRiver.Views"
+        xmlns:vms="clr-namespace:TweRiver.ViewModels"
+        mc:Ignorable="d"
+        Title="AlcedoWIndow" AllowsTransparency="True" ShowInTaskbar="False" SizeToContent="WidthAndHeight" WindowStyle="None" Background="Transparent" Focusable="False" Topmost="True">
+    <Grid Height="Auto" Width="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Width="Auto" Height="Auto" Text="{Binding Model.Name}" Foreground="WhiteSmoke" FontSize="30" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="1" Margin="30,0" Width="Auto" Height="Auto" Text="{Binding Model.Tweet}" Foreground="WhiteSmoke" FontSize="{x:Static vms:AlcedoWindowViewModel.FontSize}" HorizontalAlignment="Left"/>
+    </Grid>
+</Window>
